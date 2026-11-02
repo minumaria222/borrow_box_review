@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BorrowBox | Borrow Smart. Share More.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="home">
+<header class="site-header">
+  <nav class="navbar container-wide" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="brand-mark"><i class="bi bi-box-seam-fill"></i></span><span>Borrow<span class="brand-light">Box</span></span></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
+    <div class="nav-links">
+      <a class="nav-link active" href="index.html">Home</a><a class="nav-link" href="browse.html">Browse</a><a class="nav-link" href="requests.html">My requests</a><a class="nav-link" href="owner-dashboard.html">Owner desk</a>
+      <a class="button button-nav" href="list-item.html"><i class="bi bi-plus-lg"></i> List an item</a>
+      <label class="student-switch"><i class="bi bi-person-circle"></i><span class="visually-hidden">Demo student</span><select id="currentStudent" aria-label="Switch demo student"><option>Loading…</option></select></label>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="hero container-wide">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> The campus sharing community</div>
+      <h1>Borrow Smart.<br><span>Share More.</span></h1>
+      <p class="hero-lede">Good tools, notes and gear should go further. Borrow what you need from your campus community, and pass along what you don't.</p>
+      <div class="hero-actions"><a class="button button-primary" href="browse.html">Browse items <i class="bi bi-arrow-up-right"></i></a><a class="button button-outline" href="list-item.html"><i class="bi bi-plus-lg"></i> List an item</a></div>
+      <div class="hero-proof"><div class="avatar-stack"><span>A</span><span>R</span><span>J</span></div><p><strong>Made for campus life</strong><br><span>Share more. Spend less.</span></p></div>
+    </div>
+    <div class="hero-visual">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1400&q=88" alt="Students walking together across a college campus">
+      <div class="hero-photo-shade"></div>
+      <div class="hero-caption"><span class="caption-icon"><i class="bi bi-arrow-left-right"></i></span><span><strong>One campus. More possibilities.</strong><small>Borrowed today, returned tomorrow.</small></span><i class="bi bi-arrow-up-right ms-auto"></i></div>
+      <div class="floating-note"><i class="bi bi-check-circle-fill"></i><span><strong>Community first</strong><small>Built on trust</small></span></div>
+    </div>
+  </section>
+  <section class="trust-strip"><div class="container-wide trust-inner"><span><i class="bi bi-mortarboard"></i> Student-led sharing</span><span><i class="bi bi-arrow-repeat"></i> Keep useful things in use</span><span><i class="bi bi-geo-alt"></i> Right here on campus</span></div></section>
+  <section class="section container-wide" id="featured">
+    <div class="section-heading"><div><div class="eyebrow">A good place to start</div><h2>Find your next <span>borrow.</span></h2></div><a class="text-link" href="browse.html">See everything <i class="bi bi-arrow-right"></i></a></div>
+    <div class="item-grid featured-grid" id="featuredItems"><div class="loading-state">Finding useful things on campus…</div></div>
+  </section>
+  <section class="how-section"><div class="container-wide">
+    <div class="section-heading"><div><div class="eyebrow">Simple by design</div><h2>Sharing, in <span>four steps.</span></h2></div><p class="section-side-note">The right thing, at the right time, from someone nearby.</p></div>
+    <div class="steps-grid"><article class="step"><span class="step-number">01</span><i class="bi bi-search"></i><h3>Browse what's available</h3><p>Search student listings by item, category or availability.</p></article><article class="step"><span class="step-number">02</span><i class="bi bi-send"></i><h3>Send a request</h3><p>Choose your dates and let the owner know what you need.</p></article><article class="step"><span class="step-number">03</span><i class="bi bi-hand-thumbs-up"></i><h3>Get the go-ahead</h3><p>The owner reviews your request and confirms the handoff.</p></article><article class="step"><span class="step-number">04</span><i class="bi bi-arrow-return-left"></i><h3>Borrow, then return</h3><p>Make good use of it, then return it ready for the next student.</p></article></div>
+  </div></section>
+  <section class="benefits-section container-wide"><div class="benefit-visual"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1100&q=85" alt="Students studying together at a table"><div class="image-label"><i class="bi bi-heart-fill"></i> Better together</div></div><div class="benefit-copy"><div class="eyebrow">More than a marketplace</div><h2>Small shares.<br><span>Big campus energy.</span></h2><p>BorrowBox makes it easier to get through the semester without buying everything new. Share what you have, find what you need, and make campus feel a little more connected.</p><div class="benefit-points"><div><i class="bi bi-wallet2"></i><span><strong>Save on the semester</strong><small>Borrow the occasional-use essentials.</small></span></div><div><i class="bi bi-recycle"></i><span><strong>Give good gear another turn</strong><small>Keep useful things out of storage.</small></span></div><div><i class="bi bi-people"></i><span><strong>Meet your campus community</strong><small>Sharing starts with students nearby.</small></span></div></div><a class="button button-primary" href="browse.html">Explore the collection <i class="bi bi-arrow-right"></i></a></div></section>
+</main>
+<footer class="site-footer"><div class="container-wide footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark"><i class="bi bi-box-seam-fill"></i></span><span>Borrow<span class="brand-light">Box</span></span></a><p>Borrow Smart. Share More.</p><div class="footer-links"><a href="browse.html">Browse</a><a href="list-item.html">List an item</a><a href="owner-dashboard.html">Owner desk</a></div></div><div class="container-wide footer-bottom"><span>Built for students, shared by students.</span><span>Campus demo · <a href="README.md">About this prototype</a></span></div></footer>
+<div id="toast" class="toast-message" role="status" aria-live="polite"></div>
+<script src="js/app.js" defer></script>
+</body>
+</html>

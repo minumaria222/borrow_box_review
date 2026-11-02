@@ -1,0 +1,22 @@
+services:
+  db:
+    image: mysql:8.4
+    container_name: borrowbox-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: borrowbox_db
+      MYSQL_USER: borrowbox
+      MYSQL_PASSWORD: ${DB_PASSWORD:-borrowbox_demo}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-borrowbox_root_demo}
+    ports:
+      - "3306:3306"
+    volumes:
+      - borrowbox-mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-u", "root", "-p$${MYSQL_ROOT_PASSWORD}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  borrowbox-mysql-data:
